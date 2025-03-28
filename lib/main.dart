@@ -120,6 +120,8 @@ class MyApp extends StatelessWidget {
                       filled: true,
                       prefixIcon: Icon(Icons.password_outlined,
                           color: Color(0xFF8E9092)),
+                      suffixIcon: Icon(Icons.visibility_outlined,
+                          color: Color(0xFF8E9092)),
                       focusedBorder: OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Color(0xFFE4E7EB), width: 1.5),
