@@ -18,13 +18,13 @@ class MyApp extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image(
-                        height: 60,
-                        width: 60,
+                        height: 44,
+                        width: 44,
                         image: AssetImage('images/logo.png')),
                     SizedBox(width: 2),
                     Column(
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                     )
                   ],
                 ),
-                const SizedBox(height: 38),
+                const SizedBox(height: 28),
                 const Center(
                     child: Text(
                   'Login',
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
                       color: Color(0xff2D3142)),
                 )),
                 const SizedBox(
-                  height: 12,
+                  height: 4,
                 ),
                 const Center(
                     child: Text(
@@ -104,7 +104,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 12,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 24),
@@ -131,6 +131,25 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 2,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(
+                        'Forgot Password?',
+                        textAlign: TextAlign.end,
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Rubik Regular',
+                            color: Color(0xff2D3142)),
+                      ),
+                    ],
+                  ),
+                ),
                 // Padding(
                 //   padding: EdgeInsets.all(20),
                 //   // padding: EdgeInsets.only(left: 20, right: 30),
@@ -147,35 +166,37 @@ class MyApp extends StatelessWidget {
                 //   ),
                 // ),
                 SizedBox(
-                  height: 100,
+                  height: 92,
                 ),
-                Container(
-                  height: 50,
-                  width: 260,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Color(0xff066FDA),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0x2C0478EC), // Shadow color
-                        spreadRadius: 2, // How far the shadow spreads
-                        blurRadius: 32, // How soft the shadow is
-                        offset: Offset(4, 12), // Shadow position (x, y)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Color(0xff066FDA),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x2C0478EC), // Shadow color
+                          spreadRadius: 2, // How far the shadow spreads
+                          blurRadius: 32, // How soft the shadow is
+                          offset: Offset(4, 12), // Shadow position (x, y)
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Login',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontFamily: 'Rubik Medium',
+                            color: Color(0xffffffff)),
                       ),
-                    ],
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Login',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontFamily: 'Rubik Medium',
-                          color: Color(0xffffffff)),
                     ),
                   ),
                 ),
-                SizedBox(height: 14),
+                SizedBox(height: 12),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
